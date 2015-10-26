@@ -1,0 +1,153 @@
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+	background-color: #F5F5F1;
+	margin:0;
+	font-family: Tahoma;
+}
+
+header {
+	background-color: #FFFFFF;
+	overflow: auto;
+	padding: 30px 0;
+	margin-bottom: 20px;
+	border-bottom: 1px solid #DCDCD9;
+	box-shadow: 1px 1px 5px #ECECE9;
+}
+
+.logo {
+	background-image: url("http://etsy.com/assets/dist/images/etsylogo.20151016163845.png");
+	display: block;
+	float: left;
+	width: 75px;
+	height: 36px;
+	position: relative;
+	left: 10%;
+	clear: both;
+}
+
+.form {
+	display: inline-block;
+	position: absolute;
+	left: 18%;
+}
+
+.form input[type="text"] {
+  display: inline-block;
+  margin: 0;
+  width: 250px;
+  font-family: Tahoma;
+  font-size: 14px;
+  appearance: none;
+  border-radius: .2em;
+  padding: 7px;
+  border: solid 1px #CECBC8;
+  background:#f9f9f8;
+  outline: none;
+  box-shadow: inset 0px 0px 1px 1px #dddddd;
+
+}
+
+#form_button {
+  color: #FFFFFF;
+  font-weight: bold;
+  font-size: 14px;
+  background-color: #51A6C1;
+  display: inline-block;
+  border: 1px solid #4996AF;
+  padding: 7px 15px 7px 15px;
+  margin: 0;
+  border-top-right-radius: .2em;
+  border-bottom-right-radius: .2em;
+}
+
+#form_button:hover {
+	background-color: #54B0D1;
+}
+
+#form_field:hover {
+	outline: none;
+	border: 1px solid #bcb7b3;
+}
+
+.grid_container {
+	max-width: 750px;
+	margin-left: 18%;
+	display: inline-block;
+}
+
+.search_breadcrumb {
+	margin-left: 17px;
+	margin-bottom: 15px;
+	font-size: 12px;
+	color: #545662;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.item_container {
+	display: inline-block;
+	width: 225px;
+	overflow: hidden;
+	margin-left: 1em;
+	margin-bottom: 1em;
+	border: solid 1px #E1E3DF;
+	border-bottom: 0;
+}
+
+.item_image {
+	float: left;
+	overflow: hidden;
+	height: 180px;
+	border-bottom: solid 1px #E1E3DF;
+	margin: 0;
+}
+
+.item_image img {
+	max-width: 125%;
+	min-width: 225px;
+	min-height: 180px;
+}
+
+.item_footer {
+	display: inline-block;
+	max-width: 100%;
+	padding: 8px 6px 8px 6px;
+	border-bottom: solid 1px #CBCCC9;
+	font-family: Tahoma;
+	font-size: 12px;
+	background-color: #FFFFFF;
+}
+
+.title {
+	display: inline-block;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	width: 99%;
+}
+.title a {
+	color: #55555A;
+	text-decoration: none;
+}
+
+.login_name a {
+	color: #AEACBC;
+	text-decoration: none;
+}
+.login_name a:hover {
+	text-decoration: underline;
+}
+
+.price {
+	color: #8FB856;
+	float: right;
+}
+
+

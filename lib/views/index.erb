@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Etsiest</title>
+		<link rel="stylesheet" href="/main.css">
+	</head>
+	<body>
+		<header>
+			<a href="/"> 
+				<div class="logo"></div>
+			</a>
+			<div class="form">
+				<form method="get" action="/search">
+					<input id="form_field" type="text" name="keywords">
+					<button id="form_button" type="submit" value="Search">Search</button>
+				</form>
+			</div>
+		</header>
+		<section>
+			<div class="grid_container">
+				<% if params["keywords"] %>
+						<div class="search_breadcrumb">
+							All Categories >
+							"<span class="bold"><%= params["keywords"] %></span>" 
+							(<%= results_count %> Results)
+						</div>
+						<% data.each do |item| %>
+							<div class="item_container">
+								<div class="item_image">
+									<a href="<%= item[:item_url] %>">
+										<img src="<%= item[:image] %>" title="<%= item[:title] %>">
+									</a>
+								</div>
+								<div class="item_footer">
+									<span class="title"><a href="<%= item[:item_url] %>"><%=item[:title]%></a></span>
+									<span class="login_name"><a href="<%= item[:shop_url] %>"><%= item[:login_name] %></a></span>
+									<span class="price">$<%= item[:price] %> <%= item[:currency_code] %></span>
+								</div>
+							</div>
+						<% end %>
+				<% else %>
+					<div>
+						Um... like you need to actually search for somtn... mmmktnx.
+					</div>
+				<% end %>
+			</div>
+		</section>
+	</body>
+</html>
